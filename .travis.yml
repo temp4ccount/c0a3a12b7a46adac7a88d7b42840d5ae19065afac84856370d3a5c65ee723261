@@ -1,0 +1,18 @@
+sudo: false
+
+language: node_js
+node_js: 
+  - "stable"
+install:
+  - npm ci
+script:
+  - npm run test:unit
+  - npm run test:coveralls
+
+cache:
+  directories:
+    - "node_modules"
+    - "src"
+  
+notifications:
+  - email: false
