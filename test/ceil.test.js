@@ -13,23 +13,23 @@ import ceil from "../src/ceil.js";
  * // => 6100
  */
 describe("Ceil.js tests", () => {
-  it("First example", () => {
+  it("First example: ", () => {
     expect(ceil(4.006)).to.equal(5);
   });
 
-  it("Second example", () => {
+  it("Second example: ", () => {
     expect(ceil(6.004, 2)).to.equal(6.01);
   });
 
-  it("Third example", () => {
+  it("Third example: ", () => {
     expect(ceil(6040, -2)).to.equal(6100);
   });
 
-  it("Negative", () => {
+  it("Negative: ", () => {
     expect(ceil(-4.006)).to.equal(-4);
   });
 
-  it("String", () => {
+  it("String: ", () => {
     expect(ceil("String")).to.deep.equal(NaN);
   });
 });
