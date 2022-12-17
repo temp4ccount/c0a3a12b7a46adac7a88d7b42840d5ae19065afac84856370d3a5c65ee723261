@@ -22,8 +22,10 @@ jobs:
       #- run: npm test
       - run: npm run test:unit
       - run: npm run test:coveralls
+        if: ${{ always() }}
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
+        if: ${{ always() }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
