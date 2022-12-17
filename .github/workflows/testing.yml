@@ -20,8 +20,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       #- run: npm test
-      - run: npm run test:coveralls
       - run: npm run test:unit
+      - run: npm run test:coveralls
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
