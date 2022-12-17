@@ -28,11 +28,6 @@ jobs:
       #- run: npm run test:coveralls
       # if: ${{ always() }}
 
-#    "test": "mocha -require babel-register test --exit",
-#    "test:unit": "node --experimental-vm-modules node_modules/.bin/jest",
-#    "test:coverage": "nyc --reporter=text --reporter=lcov --reporter=html --reporter=json npm run test",
-#    "test:coveralls": "nyc report --reporter=text-lcov | coveralls"
-
       - name: Coveralls
         uses: coverallsapp/github-action@master
         if: ${{ always() }}
