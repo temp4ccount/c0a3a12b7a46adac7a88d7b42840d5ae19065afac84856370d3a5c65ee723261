@@ -25,10 +25,10 @@ describe("Capitalize.js tests", () => {
   });
 
   it("Object", () => {
-    expect(capitalize({})).to.equal({});
+    expect(capitalize({})).to.deep.equal({});
   });
 
   it("List", () => {
-    expect(capitalize([])).to.equal([]);
+    expect(capitalize([])).to.deep.equal([]);
   });
 });

@@ -12,9 +12,9 @@ describe("Add.js tests", () => {
     expect(add(-1, -1)).to.equal(-2);
   });
 
-  //it("Undefined", () => {
-  //  expect(add(undefined, undefined)).to.deep.equal(undefined);
-  //});
+  it("Undefined", () => {
+    expect(add(undefined, undefined)).to.deep.equal(undefined);
+  });
 
   it("Strings", () => {
     expect(add("1", "1")).to.equal("11");
